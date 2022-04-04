@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Add/Edit Form";
+}
+@model Mission13.Models.Bowler
+
+<div class="row">
+    <div class="col-3"></div>
+
+    <div class="col-6">
+        <div class="form-group row flex-v-center">
+            <form method="post" class="text-center">
+
+                <input type="hidden" asp-for="BowlerID" value="" />
+
+                <label asp-for="BowlerLastName">Last Name: </label>
+                <input asp-for="BowlerLastName" /><br />
+
+                <label asp-for="BowlerFirstName">First Name: </label>
+                <input asp-for="BowlerFirstName" /><br />
+
+                <label asp-for="BowlerMiddleInit">Middle Inital: </label>
+                <input asp-for="BowlerMiddleInit" /><br />
+
+                <label asp-for="BowlerAddress">Address: </label>
+                <input asp-for="BowlerAddress" /><br />
+
+                <label asp-for="BowlerCity">City: </label>
+                <input asp-for="BowlerCity" /><br />
+
+                <label asp-for="BowlerState">State: </label>
+                <input asp-for="BowlerState" /><br />
+
+                <label asp-for="BowlerZip">Zip: </label>
+                <input asp-for="BowlerZip" /><br />
+
+                <label asp-for="BowlerPhoneNumber">Phone Number: </label>
+                <input asp-for="BowlerPhoneNumber" /><br />
+
+                <label asp-for="TeamID">Team ID: </label>
+                <input asp-for="TeamID" /><br />
+
+                <button asp-controller="Home" class="btn btn-outline-primary" type="submit">Save</button>
+
+                <div asp-validation-summary="All"></div>
+            </form>
+        </div>
+    </div>
+</div>
